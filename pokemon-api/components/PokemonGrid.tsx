@@ -7,10 +7,17 @@ import { PokemonCard } from "./PokemonCard";
 interface PokemonGridProps {
   pokemonList: any;
   generation: string;
+  special?: boolean;
 }
 
-export function PokemonGrid({ pokemonList, generation }: PokemonGridProps) {
+export function PokemonGrid({
+  pokemonList,
+  generation,
+  special,
+}: PokemonGridProps) {
   const [searchText, setSearchText] = useState("");
+
+  const isSpecial = special;
 
   const searchFilter = (pokemonList: any) => {
     return pokemonList.filter((pokemon: any) =>
@@ -23,7 +30,7 @@ export function PokemonGrid({ pokemonList, generation }: PokemonGridProps) {
     <>
       <div>
         <h3 className="text-2xl py-6 text-center">Search</h3>
-        <div className="grid w-full max-w-sm items-center gap-1.5">
+        <div className="grid w-full max-w-sm mx-auto items-center gap-1.5">
           <Label htmlFor="pokemonName">Pokemon Name</Label>
           <Input
             type="text"
@@ -34,7 +41,11 @@ export function PokemonGrid({ pokemonList, generation }: PokemonGridProps) {
             onChange={(e) => setSearchText(e.target.value)}
           />
         </div>
-        <h3 className="text-3xl pt-12 pb-6 text-center">{`Generation ${generation} Pokemon`}</h3>
+        {!isSpecial ? (
+          <h3 className="text-3xl pt-12 pb-6 text-center">{`Generation ${generation} Pokemon`}</h3>
+        ) : (
+          <h3 className="text-3xl pt-12 pb-6 text-center">{`More Pokemon!`}</h3>
+        )}
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
