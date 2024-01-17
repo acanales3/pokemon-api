@@ -6,9 +6,10 @@ import { PokemonCard } from "./PokemonCard";
 
 interface PokemonGridProps {
   pokemonList: any;
+  generation: string;
 }
 
-export function PokemonGrid({ pokemonList }: PokemonGridProps) {
+export function PokemonGrid({ pokemonList, generation }: PokemonGridProps) {
   const [searchText, setSearchText] = useState("");
 
   const searchFilter = (pokemonList: any) => {
@@ -33,7 +34,7 @@ export function PokemonGrid({ pokemonList }: PokemonGridProps) {
             onChange={(e) => setSearchText(e.target.value)}
           />
         </div>
-        <h3 className="text-3xl pt-12 pb-6 text-center">Pokemon Collection</h3>
+        <h3 className="text-3xl pt-12 pb-6 text-center">{`Generation ${generation} Pokemon`}</h3>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
