@@ -21,9 +21,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <main className="flex min-h-screen flex-col items-center p-24">
-            <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex">
+            <div className="z-10 max-w-5xl w-full items-center justify-between text-sm">
               <Link href="/">
-                <h2 className="text-2xl text-bold">Pokemon Finder</h2>
+                <h2 className="text-2xl text-bold text-center my-4">
+                  Pokemon Finder
+                </h2>
               </Link>
             </div>
             {children}
