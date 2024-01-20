@@ -35,71 +35,105 @@ export default async function Home() {
   return (
     <>
       <Accordion className="w-full" type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Generation One</AccordionTrigger>
+        <AccordionItem
+          value="item-1"
+          className="mx-auto w-full bg-red-200 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation One
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"One"} pokemonList={gen1} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-2">
-          <AccordionTrigger>Generation Two</AccordionTrigger>
+        <AccordionItem
+          value="item-2"
+          className="mx-auto w-full bg-orange-200 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Two</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Two"} pokemonList={gen2} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-3">
-          <AccordionTrigger>Generation Three</AccordionTrigger>
+        <AccordionItem
+          value="item-3"
+          className="mx-auto w-full bg-orange-300 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Three</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Three"} pokemonList={gen3} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-4">
-          <AccordionTrigger>Generation Four</AccordionTrigger>
+        <AccordionItem
+          value="item-4"
+          className="mx-auto w-full bg-yellow-200 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Four</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Four"} pokemonList={gen4} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-5">
-          <AccordionTrigger>Generation Five</AccordionTrigger>
+        <AccordionItem
+          value="item-5"
+          className="mx-auto w-full bg-green-200 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Five</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Five"} pokemonList={gen5} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-6">
-          <AccordionTrigger>Generation Six</AccordionTrigger>
+        <AccordionItem
+          value="item-6"
+          className="mx-auto w-full bg-blue-200 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Six</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Six"} pokemonList={gen6} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-7">
-          <AccordionTrigger>Generation Seven</AccordionTrigger>
+        <AccordionItem
+          value="item-7"
+          className="mx-auto w-full bg-blue-300 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Seven</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Seven"} pokemonList={gen7} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-8">
-          <AccordionTrigger>Generation Eight</AccordionTrigger>
+        <AccordionItem
+          value="item-8"
+          className="mx-auto w-full bg-purple-200 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Eight</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Eight"} pokemonList={gen8} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-9">
-          <AccordionTrigger>Generation Nine</AccordionTrigger>
+        <AccordionItem
+          value="item-9"
+          className="mx-auto w-full bg-purple-300 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">Generation Nine</AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Nine"} pokemonList={gen9} />
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-10">
-          <AccordionTrigger>Other Pokemon Forms!</AccordionTrigger>
+        <AccordionItem
+          value="item-10"
+          className="mx-auto w-full bg-purple-500 rounded-lg overflow-hidden my-4 border-b-0"
+        >
+          <AccordionTrigger className="ml-2">
+            Other Pokemon Forms!
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid
               special={true}
