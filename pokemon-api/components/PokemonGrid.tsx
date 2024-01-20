@@ -29,22 +29,25 @@ export function PokemonGrid({
   return (
     <>
       <div>
-        <h3 className="text-2xl py-6 text-center">Search</h3>
+        <h3 className="text-2xl py-6 text-center exo2-ib">Search</h3>
         <div className="grid w-full max-w-sm mx-auto items-center gap-1.5">
-          <Label htmlFor="pokemonName">Pokemon Name</Label>
+          <Label htmlFor="pokemonName" className="text-center exo2">
+            Pokemon Name
+          </Label>
           <Input
             type="text"
             value={searchText}
             autoComplete="off"
             id="pokemonName"
-            placeholder="Find Your Pokemon"
+            placeholder="Find Your Pokemon!"
             onChange={(e) => setSearchText(e.target.value)}
+            className="exo2"
           />
         </div>
         {!isSpecial ? (
-          <h3 className="text-3xl pt-12 pb-6 text-center">{`Generation ${generation} Pokemon`}</h3>
+          <h3 className="text-3xl pt-12 pb-6 text-center exo2-b">{`Generation ${generation} Pokemon`}</h3>
         ) : (
-          <h3 className="text-3xl pt-12 pb-6 text-center">{`More Pokemon!`}</h3>
+          <h3 className="text-3xl pt-12 pb-6 text-center exo2-b">{`More Pokemon!`}</h3>
         )}
       </div>
 

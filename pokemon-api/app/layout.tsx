@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col items-center p-24 bg-red-300">
           <div className="z-10 max-w-5xl w-full items-center justify-between text-sm">
             <Link href="/">
-              <h2 className="text-3xl font-bold text-center text-red-500 my-4">
+              <h2 className="text-6xl font-bold text-center text-red-500 my-4 exo2-b">
                 Pok&eacute;mon Finder
               </h2>
             </Link>

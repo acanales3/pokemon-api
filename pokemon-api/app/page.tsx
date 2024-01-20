@@ -51,7 +51,9 @@ export default async function Home() {
           value="item-2"
           className="mx-auto w-full bg-orange-200 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Two</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Two
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Two"} pokemonList={gen2} />
           </AccordionContent>
@@ -61,7 +63,9 @@ export default async function Home() {
           value="item-3"
           className="mx-auto w-full bg-orange-300 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Three</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Three
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Three"} pokemonList={gen3} />
           </AccordionContent>
@@ -71,7 +75,9 @@ export default async function Home() {
           value="item-4"
           className="mx-auto w-full bg-yellow-200 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Four</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Four
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Four"} pokemonList={gen4} />
           </AccordionContent>
@@ -81,7 +87,9 @@ export default async function Home() {
           value="item-5"
           className="mx-auto w-full bg-green-200 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Five</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Five
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Five"} pokemonList={gen5} />
           </AccordionContent>
@@ -91,7 +99,9 @@ export default async function Home() {
           value="item-6"
           className="mx-auto w-full bg-blue-200 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Six</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Six
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Six"} pokemonList={gen6} />
           </AccordionContent>
@@ -101,7 +111,9 @@ export default async function Home() {
           value="item-7"
           className="mx-auto w-full bg-blue-300 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Seven</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Seven
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Seven"} pokemonList={gen7} />
           </AccordionContent>
@@ -111,7 +123,9 @@ export default async function Home() {
           value="item-8"
           className="mx-auto w-full bg-purple-200 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Eight</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Eight
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Eight"} pokemonList={gen8} />
           </AccordionContent>
@@ -121,7 +135,9 @@ export default async function Home() {
           value="item-9"
           className="mx-auto w-full bg-purple-300 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">Generation Nine</AccordionTrigger>
+          <AccordionTrigger className="ml-2 exo2-ib">
+            Generation Nine
+          </AccordionTrigger>
           <AccordionContent>
             <PokemonGrid generation={"Nine"} pokemonList={gen9} />
           </AccordionContent>
@@ -131,7 +147,7 @@ export default async function Home() {
           value="item-10"
           className="mx-auto w-full bg-purple-500 rounded-lg overflow-hidden my-4 border-b-0"
         >
-          <AccordionTrigger className="ml-2">
+          <AccordionTrigger className="ml-2 exo2-ib">
             Other Pokemon Forms!
           </AccordionTrigger>
           <AccordionContent>
