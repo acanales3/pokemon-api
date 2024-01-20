@@ -12,7 +12,7 @@ export default async function PokemonPage({
   const pokemonObject = await getPokemon(pokemonName);
   return (
     <>
-      <h1 className="text-4xl text-bold pt-4">
+      <h1 className="text-4xl text-bold pt-4 exo2-b">
         {pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}
       </h1>
       <div
@@ -24,8 +24,10 @@ export default async function PokemonPage({
           name={pokemonName}
         />
       </div>
-      <h3>Weight: {((pokemonObject.weight / 10) * 2.2).toFixed(2)} lbs</h3>
-      <div className="flex-col">
+      <h3 className="exo2-ib">
+        Weight: {((pokemonObject.weight / 10) * 2.2).toFixed(2)} lbs
+      </h3>
+      <div className="flex-col exo2">
         {pokemonObject.stats.map((statObject: any) => {
           const statName = statObject.stat.name;
           const statValue = statObject.base_stat;
