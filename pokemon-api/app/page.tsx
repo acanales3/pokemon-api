@@ -42,7 +42,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation One
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"One"} pokemonList={gen1} />
           </AccordionContent>
         </AccordionItem>
@@ -54,7 +54,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Two
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Two"} pokemonList={gen2} />
           </AccordionContent>
         </AccordionItem>
@@ -66,7 +66,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Three
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Three"} pokemonList={gen3} />
           </AccordionContent>
         </AccordionItem>
@@ -78,7 +78,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Four
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Four"} pokemonList={gen4} />
           </AccordionContent>
         </AccordionItem>
@@ -90,7 +90,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Five
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Five"} pokemonList={gen5} />
           </AccordionContent>
         </AccordionItem>
@@ -102,7 +102,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Six
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Six"} pokemonList={gen6} />
           </AccordionContent>
         </AccordionItem>
@@ -114,7 +114,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Seven
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Seven"} pokemonList={gen7} />
           </AccordionContent>
         </AccordionItem>
@@ -126,7 +126,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Eight
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Eight"} pokemonList={gen8} />
           </AccordionContent>
         </AccordionItem>
@@ -138,7 +138,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Generation Nine
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid generation={"Nine"} pokemonList={gen9} />
           </AccordionContent>
         </AccordionItem>
@@ -150,7 +150,7 @@ export default async function Home() {
           <AccordionTrigger className="ml-2 exo2-ib">
             Other Pokemon Forms!
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="mx-auto max-w-screen-md">
             <PokemonGrid
               special={true}
               generation={"Other"}
