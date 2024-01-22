@@ -16,7 +16,6 @@ export function PokemonGrid({
   special,
 }: PokemonGridProps) {
   const [searchText, setSearchText] = useState("");
-
   const isSpecial = special;
 
   const searchFilter = (pokemonList: any) => {
@@ -28,7 +27,7 @@ export function PokemonGrid({
 
   return (
     <>
-      <div>
+      <div className="text-center">
         <h3 className="text-2xl py-6 text-center exo2-ib">Search</h3>
         <div className="grid w-full max-w-sm mx-auto items-center gap-1.5">
           <Label htmlFor="pokemonName" className="text-center exo2">
@@ -51,7 +50,7 @@ export function PokemonGrid({
         )}
       </div>
 
-      <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-3">
+      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-3">
         {filteredPokemon.map((pokemon: any) => {
           return (
             <PokemonCard name={pokemon.name} key={pokemon.name + "Card"} />
