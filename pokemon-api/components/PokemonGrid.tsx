@@ -50,12 +50,18 @@ export function PokemonGrid({
         )}
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-3">
-        {filteredPokemon.map((pokemon: any) => {
-          return (
+      <div className="grid text-center lg:mb-0 lg:grid-cols-3">
+        {filteredPokemon.length > 0 ? (
+          filteredPokemon.map((pokemon: any) => (
             <PokemonCard name={pokemon.name} key={pokemon.name + "Card"} />
-          );
-        })}
+          ))
+        ) : (
+          <div className="col-span-3 flex items-center justify-center">
+            <div className="exo2-ib flex gap-2 rounded-lg px-4 text-2xl font-semibold">
+              No Pokemon Match!
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
